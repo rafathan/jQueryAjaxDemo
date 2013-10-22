@@ -1,0 +1,39 @@
+﻿@model jQueryAjax.FakeRepo.Person
+
+<form id="newPersonForm" class="form-horizontal" role="form">
+    <div class="form-group">
+        <label for="FullName" class="col-lg-2 control-label">Name</label>
+        <div class="col-lg-4">
+            @Html.TextBoxFor(a => a.FullName, new {@class = "form-control"})
+            @Html.ValidationMessageFor(a => a.FullName)
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="EyeColor" class="col-lg-2 control-label">Eyes</label>
+        <div class="col-lg-4">
+            @Html.TextBoxFor(a => a.EyeColor, new {@class = "form-control"})
+            @Html.ValidationMessageFor(a => a.EyeColor)
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="FullName" class="col-lg-2 control-label">Hair</label>
+        <div class="col-lg-4">
+            @Html.TextBoxFor(a => a.HairColor, new {@class = "form-control"})
+            @Html.ValidationMessageFor(a => a.HairColor)
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="FullName" class="col-lg-2 control-label">Height</label>
+        <div class="col-lg-4">
+            @Html.TextBoxFor(a => a.Height, new {@class = "form-control"})
+            @Html.ValidationMessageFor(a => a.Height)
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="FullName" class="col-lg-2 control-label">Hometown</label>
+        <div class="col-lg-4">
+            @Html.TextBoxFor(a => a.Hometown, new {@class = "form-control"})
+            @Html.ValidationMessageFor(a => a.Hometown)
+        </div>
+    </div>
+</form>

@@ -1,0 +1,29 @@
+﻿@model List<jQueryAjax.FakeRepo.Person>
+  
+<h2>People List</h2>
+<table class="table table-bordered table-condensed table-hover table-responsive">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Hair Color</th>
+            <th>Eye Color</th>
+            <th>Height</th>
+            <th>Hometown</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var person in Model)
+        { 
+            <tr id="@person.ID">
+                <td>@person.FullName</td>
+                <td>@person.HairColor</td>
+                <td>@person.EyeColor</td>
+                <td>@person.Height</td>
+                <td>@person.Hometown</td>
+                <td class="text-center"><i class="glyphicon glyphicon-remove-circle" title="Remove Person" onclick="removePerson(@person.ID)"></i></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
